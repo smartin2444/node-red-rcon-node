@@ -1,0 +1,19 @@
+{
+  "name": "nodes-node-red",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "rcon-command": "rcon-command.js"
+    }
+  },
+  "dependencies": {
+    "rcon": "^1.1.0"
+  }
+}
