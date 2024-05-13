@@ -3,7 +3,10 @@
         category: 'function',
         color: '#a6bbcf',
         defaults: {
-            name: {value:""}
+            name: {value:""},
+            ip: {value:""},
+            port: {value:25575},
+            password: {value:""}
         },
         inputs: 1,
         outputs: 1,
@@ -14,18 +17,13 @@
     });
 </script>
 
-<script type="text/html" data-template-name="rcom-command">
+<script type="text/html" data-template-name="rcon-command">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
-    <div class="form-row">
-        <label for="node-input-address"><i class="fa fa-tag"></i> Address</label>
-        <input type="text" id="node-input-address" placeholder="Address">
-    </div>
-
 </script>
 
 <script type="text/html" data-help-name="rcon-command">
-    <p>A simple node that converts the message payloads into all lower-case characters</p>
+    <p>Node for interacting with a Minecraft server over RCON</p>
 </script>
